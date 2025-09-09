@@ -1,5 +1,29 @@
 1. 사용한 명령어들의 설명을 history 기록 기준으로 문서
+사용한 명령어들의 설명 (history 기준)
 
+sudo nano /lib/systemd/system/david.service
+systemd 서비스 파일을 생성하거나 수정하기 위해 nano 편집기를 관리자 권한으로 실행하는 명령어입니다.
+
+Ctrl + O (nano 편집기 내)
+nano 편집기에서 작성한 내용을 저장하는 단축키입니다.
+
+Ctrl + X (nano 편집기 내)
+nano 편집기를 종료하는 단축키입니다.
+
+sudo systemctl daemon-reload
+systemd에 새로 작성하거나 변경한 서비스 파일을 다시 읽도록 알려주는 명령어입니다.
+
+sudo systemctl enable david.service
+시스템 부팅 시 david.service가 자동으로 시작되도록 활성화하는 명령어입니다.
+
+sudo systemctl start david.service
+david.service 서비스를 즉시 시작하는 명령어입니다.
+
+systemctl is-active david
+david 서비스가 현재 실행 중인지 상태를 확인하는 명령어입니다. (출력으로 active가 나오면 정상 작동 중임을 의미합니다.)
+
+sudo systemctl stop david.service
+david.service 서비스를 중지하는 명령어입니다.
 
 2. 가상머신에서 사용 가능한 네트워크 종류와 차이점
    
